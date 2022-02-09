@@ -6,7 +6,7 @@
 /*   By: vicmarti <vicmarti@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 22:43:08 by vicmarti          #+#    #+#             */
-/*   Updated: 2022/02/08 23:09:00 by vicmarti         ###   ########.fr       */
+/*   Updated: 2022/02/09 17:23:51 by vicmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ int	main(int argc, char **argv)
 	Karen	charito;
 
 	while (i < argc)
+	{
 		charito.complain(argv[i++]);
+		std::cout << "--------------------------------------" << std::endl;
+	}
 	return (argc);
 }
