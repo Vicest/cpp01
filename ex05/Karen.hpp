@@ -6,7 +6,7 @@
 /*   By: vicmarti <vicmarti@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 22:31:15 by vicmarti          #+#    #+#             */
-/*   Updated: 2022/02/08 23:03:56 by vicmarti         ###   ########.fr       */
+/*   Updated: 2022/02/09 16:13:08 by vicmarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ class Karen
 		void	info(void) const;
 		void	warning(void) const;
 		void	error(void) const;
+		int	indexize_level(std::string level) const;
 
-		void	(Karen::*say)(void) const;
-
+		typedef void (Karen::*SayPtr)(void) const;
 };
 #endif
