@@ -1,4 +1,4 @@
-NAME=Main
+NAME=karen
 
 CLASS:=Karen.cpp
 HEAD:=$(CLASS:.cpp=.hpp)
